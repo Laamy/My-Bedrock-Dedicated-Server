@@ -1,0 +1,48 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "MBDS Bridge Plugin Example",
+		"description": "MBDS Bridge Plugin Example",
+		"uuid": "c4e061f7-1ae7-4e58-8a94-da8b706d7eec",
+		"version": [
+			1,
+			1,
+			0
+		],
+		"min_engine_version": [
+			1,
+			18,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "029cf436-800e-4762-86ff-e07e8415b9c7",
+			"version": [
+				0,
+				0,
+				1
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"entry": "scripts/index.js",
+			"uuid": "50f49456-f969-4ee6-92fb-34c7c42b15e0",
+			"version": "1.4.0-beta"
+		}
+	],
+	"dependencies": [
+		{
+			"description": "@minecraft/server module dependency",
+			"module_name": "@minecraft/server",
+			"version": "1.4.0-beta"
+		},
+		{
+			"description": "@minecraft/server-ui module dependency",
+			"module_name": "@minecraft/server-ui",
+			"version": "1.2.0-beta"
+		}
+	]
+}
