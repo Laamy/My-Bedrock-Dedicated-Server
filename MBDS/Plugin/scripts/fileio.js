@@ -1,8 +1,9 @@
+// accesses MBDS packet stream using console
 function SendPacket(packet) {
-	// accesses MBDS packet stream using console
 	console.log(JSON.stringify(packet));
 }
 
+// Write all @"content" to the file at @"path"
 export function WriteAllText(path, content)
 {
 	SendPacket({
@@ -12,7 +13,8 @@ export function WriteAllText(path, content)
 	})
 }
 
-export function CreateDirectory(path, content)
+// Create directory/folder at @"path"
+export function CreateDirectory(path)
 {
 	SendPacket({
 		type: `CreateDirectory`,
@@ -20,6 +22,7 @@ export function CreateDirectory(path, content)
 	})
 }
 
+// Execute a console level command via @"command"
 export function ExecuteCommand(command)
 {
 	SendPacket({

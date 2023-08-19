@@ -19,6 +19,7 @@ namespace MBDS
             ServerBridge.onMessage += onMessage;
         }
 
+        // BDS sends json packets which get recived here
         private void OnJsonPacket(dynamic packet)
         {
             // process packet from BDS here
